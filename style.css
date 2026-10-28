@@ -1,0 +1,161 @@
+/* Base Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Card Container */
+.branch-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    max-width: 450px;
+    width: 100%;
+}
+
+/* Header Styling */
+.branch-header {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.branch-header h2 {
+    color: #1e293b;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.branch-header p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* Branch List Styling */
+.branch-list {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.branch-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8fafc;
+    padding: 14px 18px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    transition: all 0.2s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.branch-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background: #ffffff;
+}
+
+/* Individual Branch Accents */
+.active-branch {
+    border-left: 5px solid #3b82f6; /* Blue */
+}
+
+.feature-branch {
+    border-left: 5px solid #a855f7; /* Purple */
+}
+
+.branch-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.branch-icon {
+    font-size: 16px;
+}
+
+.branch-name {
+    font-weight: 600;
+    color: #334155;
+    font-size: 15px;
+}
+
+/* Status Badges */
+.branch-status {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.status-active {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.status-progress {
+    background: #fef9c3;
+    color: #a16207;
+}
+
+/* Form Styling */
+.add-branch-form {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 20px;
+}
+
+.add-branch-form h3 {
+    color: #1e293b;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    margin-bottom: 15px;
+}
+
+.input-group input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Button Styling */
+.add-branch-btn {
+    width: 100%;
+    background-color: #10b981; /* Premium Green */
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.add-branch-btn:hover {
+    background-color: #059669;
+}
+
+.add-branch-btn:active {
+    transform: scale(0.99);
+}
